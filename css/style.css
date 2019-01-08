@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color: rgba(94, 94, 94);
+    width: 100%
+}
+#wrapper{
+    color: white;
+    background-color: rgb(30,30,30);
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+a{
+    color: rgb(255,255,255);
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(200, 0, 0);
+}
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+.titel{
+    color: rgba(250, 250, 250, 0.9);
+    font-size: 5em;
+    text-align:center;
+    padding-top: 45vh; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 6px 4px 3px rgba(70,70,70,0.9);
+}
+.gotg{
+    color: rgb(200, 0, 0);
+    text-align: center;
+    padding-left: 50%;
+    font-size: 2.5em ;
+    text-shadow: 6px 4px 3px rgba(70,70,70,0.9);
+}
+
+header h2 {
+    padding-top: 0vh !important;
+    font-size: 2.5em !important;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 10%;
+}
+
+
+
+nav{
+    background-color: rgba(40, 40, 40, 0.7);
+    width: 100%;
+    height: 75px;
+    position: fixed
+}
+
+.main_nav{
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    
+}
+
+.main_nav li{
+    list-style: none;
+    width: calc(100%/5);
+    height: 100%;
+    
+}
+.sub_nav{
+    background-color: rgba(40, 40, 40, 0.6);
+    display: none;
+    width: inherit;
+    position: absolute;
+}
+nav a{
+    padding-top: 20px; 
+    height: 100%;
+    text-decoration: none;
+    display: inline-block;
+}
+.sub_nav a, p{
+    display: block;
+    text-align: left;
+    padding: 20px;
+    height: 75px;
+    width: 100%;
+}
+
+nav li:hover .sub_nav{
+    display: block;
+}
+main{
+    padding: 50px;
+}
+main h1{
+    text-align: center;
+}
+main p{
+    padding:0;
+    display: block;
+    height: 100%;
+}
+footer{
+    background-color: black;
+    padding: 2%;
+    padding-left: 5%;
+    font-size: 0.75em;
+    height: 200px;
+}
+.externe_links{
+    margin: 10%;
+    color: rgb(50, 87, 255);
+    text-decoration: none;
+}
