@@ -140,6 +140,15 @@ main p{
     padding-top: 10%;
 }
 
+#home{
+    padding: 5%
+}
+#home a{
+    padding: 1%;
+    font-size: 1.25em;
+    display: inline-block;
+}
+
 .left{
     width: 100%;
     background-color: rgb(240,240,240);
