@@ -42,10 +42,6 @@ body{
 a{
     color: rgb(255,255,255);
 }
-a:hover{
-    text-decoration: none;
-    color: rgb(200, 0, 0);
-}
 
 h1{
     font-size: 2em;
@@ -68,7 +64,7 @@ nav{
     background-color: rgba(40, 40, 40, 0.7);
     width: 100%;
     height: 75px;
-    position: fixed
+    position: fixed;
 }
 
 .main_nav{
@@ -97,6 +93,7 @@ nav{
     position: absolute;
 }
 nav a{
+    width: 100%;
     padding-top: 20px; 
     height: 100%;
     text-decoration: none;
@@ -120,7 +117,7 @@ main{
 }
 
 main p{
-    width: 40%; 
+    width: 40vw; 
     height: 100%;
 }
 .over{
@@ -129,8 +126,18 @@ main p{
     padding: 2%; 
 }
 .over p{
+    margin-left: 30%;
     text-align: left;
 
+}
+#text{
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    padding: 5%
+}
+#text p{
+    padding-top: 10%;
 }
 
 .left{
@@ -140,17 +147,15 @@ main p{
     display: inline-block;
     color: black;
 }
-
-#text{
-    width: 40%;
-    height: 100%;
-    display: inline-block;
-    padding: 3%
-}
 .left img{
     float: right;
     width: 50%;
     padding: 0;
+}
+
+
+.left a{
+    color: grey;
 }
 .right{
     color: white;
@@ -162,8 +167,9 @@ main p{
 .right img{
     float: left;
     width: 50%;
-    
-    
+}
+.right a{
+    color: antiquewhite;
 }
 footer{
     background-color: black;
@@ -179,3 +185,59 @@ footer{
 }
 
 
+a:hover{
+    text-decoration: none;
+    color: rgb(200, 0, 0);
+}
+
+@media (max-width: 1200px) {
+    .titel{
+        font-size: 2.5em;
+        padding-top: 25vh;
+    }
+    #timeline img{
+        width: 100%;
+        min-width: 1000px;
+    }
+    
+    nav{
+        height: calc(75px*5);
+        position: relative;
+    }
+    
+    .main_nav{
+        display: block;
+    }
+    
+    .main_nav li{
+        display: block;
+        width: 100%;
+        height: 20%;
+    }
+
+    main p{
+        width: 100%; 
+    }
+
+    .over p{
+        margin-left: 20px;
+    }
+    
+    #text{
+        width: 100%;
+        padding: 5%
+    }
+    #text p{
+        padding-top: 20px;
+    }
+    .left img{
+        display: none;
+    }
+    .right img{
+        display: none;;  
+    }
+    .externe_links{
+        margin: 75px;
+    }
+
+}
