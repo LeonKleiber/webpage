@@ -5,7 +5,7 @@
     
 }
 body{
-    background-color: rgba(94, 94, 94);
+    background-color: rgb(94, 94, 94);
     width: 100%
 }
 #wrapper{
@@ -22,11 +22,9 @@ body{
     text-align:center;
     padding-top: 45vh; 
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 10000; 
     text-shadow: 6px 4px 3px rgba(119,119,119,0.9);
 }
 #timeline{
-    padding: auto;
     background-color: white;
     width: 100%;
     display: flex;
@@ -130,13 +128,13 @@ main p{
     text-align: left;
 
 }
-#text{
+.text{
     width: 40%;
     height: 100%;
     display: inline-block;
     padding: 5%
 }
-#text p{
+.text p{
     padding-top: 10%;
 }
 
@@ -200,6 +198,7 @@ a:hover{
 }
 
 @media (max-width: 1200px) {
+    /* resposive*/
     .titel{
         font-size: 2.5em;
         padding-top: 25vh;
